@@ -1,1 +1,9 @@
-kornia
+# /usr/local/bin/python-csd-3.8 -m venv env
+
+torch==1.5.0 # required by kornia
+torchvision==0.6.0
+kornia==0.3.1
+# homura==2020.10 # pip install -U git+https://github.com/moskomule/homura@v2020.10
+cython==0.29.21
+# hydra==0.11 # doesn't seem to exist
+hydra-core

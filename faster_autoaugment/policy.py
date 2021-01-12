@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import os, sys
+sys.path.append(os.path.abspath('../'))
+
 import random
 from copy import deepcopy
 from typing import Optional

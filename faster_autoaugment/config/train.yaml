@@ -5,10 +5,11 @@ model:
 data:
   name: cifar10
   batch_size: 128
-  download: false
+  download: true
 
 optim:
-  epochs: 200
+  epochs: 20
+  num_epochs: 20
   lr: 0.1
   momentum: 0.9
   weight_decay: 5e-4
@@ -18,6 +19,6 @@ optim:
     mul: 4
     warmup: 5
 
-gpu: 0
+gpu: 1
 seed: 1
 path: null

@@ -1,3 +1,7 @@
+import os
+os.environ["HYDRA_FULL_ERROR"] = "1"
+os.environ["HOME"] = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Mapping, Tuple
