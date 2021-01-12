@@ -187,7 +187,7 @@ def search(cfg: BaseConfig
         trainer.save(pathlib.Path(hydra.utils.get_original_cwd()) / 'policy_weights' / cfg.data.name)
 
 
-@hydra.main('config/search.yaml')
+@hydra.main(config_name'=config/search.yaml')
 def main(cfg: BaseConfig):
     print(cfg.pretty())
     if torch.cuda.is_available():

@@ -1,4 +1,6 @@
-outputs/
-policy_weights/
 __pycache__/
 env/
+
+outputs/
+policy_weights/
+events.out.tfevents.*

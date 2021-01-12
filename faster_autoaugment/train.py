@@ -135,7 +135,7 @@ def train_and_eval(cfg: BaseConfig):
     print(f"Min. Error Rate: {1 - max(c[1].history['test']):.3f}")
 
 
-@hydra.main('config/train.yaml')
+@hydra.main(config_name='config/train.yaml')
 def main(cfg: BaseConfig):
     print(cfg.pretty())
     if torch.cuda.is_available():
